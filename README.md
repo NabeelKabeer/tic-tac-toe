@@ -4,4 +4,4 @@ html version of tic tac toe
 currently supports only 2 player version
 
 give it a try...
-paradox-17.github.io/tic-tac-toe/
+[a link](paradox-17.github.io/tic-tac-toe/)
