@@ -78,6 +78,8 @@ function check_draw(b){
 
 function repaint_board(board)
 {
+	if(!is_win(board) && confirm('Do you want to forfeit the game?'))
+		return ;
 	var win = document.getElementById('winner');
 	win.textContent = '';
 	//clear internal board state
