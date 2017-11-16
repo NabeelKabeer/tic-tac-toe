@@ -77,7 +77,7 @@ function check_draw(b){
 
 function game_over(board)
 {
-	return is_win(board) && check_draw(board);
+	return is_win(board) || check_draw(board);
 }
 
 function repaint_board(board)
