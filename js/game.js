@@ -75,11 +75,15 @@ function check_draw(b){
 	return true;
 }
 
+function game_over(board)
+{
+	return is_win(board) && check_draw(board);
+}
 
 function repaint_board(board)
 {
 	
-	if(!is_win(board) && !confirm('Do you want to forfeit the game?'))
+	if(!game_over(board) && !confirm('Do you want to forfeit the game?'))
 		return ;
 	//initalize handle
 	handle = PLAYER_ONE;
