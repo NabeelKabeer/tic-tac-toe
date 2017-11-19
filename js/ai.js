@@ -175,7 +175,7 @@ function minimax(temp_board,player)
 					move.y = j;
 					move.score = temp_score;
 					ai_max = move.score;
-					console.log(move);
+					//console.log(move);
 					//if(move.score == 10) break;
 				}
 				else if(player == human && temp_score < human_min){
