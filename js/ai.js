@@ -1,5 +1,8 @@
+//table data elements
 var td_ref = document.getElementsByTagName("td");
+//new game button
 var new_game = document.getElementById('new_game');
+//winner status
 var win = document.getElementById('winner');
 
 var  PLAYER_ONE = -1;
@@ -8,7 +11,7 @@ var PLAYER_TWO = 1;
 var human = PLAYER_ONE;
 var ai = PLAYER_TWO;
 
-
+//current player
 var handle = PLAYER_ONE;
 
 //setting up game functions...
