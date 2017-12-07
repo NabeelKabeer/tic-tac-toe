@@ -100,7 +100,7 @@ function game_over(board)
 function repaint_board(board)
 {
 	
-	if(!is_empty(board)!game_over(board) && !confirm('Do you want to forfeit the game?'))
+	if(!is_empty(board) && !game_over(board) && !confirm('Do you want to forfeit the game?'))
 		return ;
 	//initalize handle
 	handle = PLAYER_ONE;
