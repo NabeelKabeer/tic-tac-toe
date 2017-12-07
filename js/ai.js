@@ -35,6 +35,14 @@ function create_board()
 	return b;
 }
 
+function is_empty(board)
+{
+	for(var i =0;i< 3;i++)
+		for(var j =0;j < 3;j++)
+			if(board[i][j] != '')
+				return false;
+	return true;
+}
 
 function is_win_state(b,value)
 {
@@ -92,7 +100,7 @@ function game_over(board)
 function repaint_board(board)
 {
 	
-	if(!game_over(board) && !confirm('Do you want to forfeit the game?'))
+	if(!is_empty(board)!game_over(board) && !confirm('Do you want to forfeit the game?'))
 		return ;
 	//initalize handle
 	handle = PLAYER_ONE;
