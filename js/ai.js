@@ -12,7 +12,7 @@ var human = PLAYER_ONE;
 var ai = PLAYER_TWO;
 
 //current player
-var handle = PLAYER_ONE;
+var handle = PLAYER_TWO;
 
 //setting up game functions...
 
